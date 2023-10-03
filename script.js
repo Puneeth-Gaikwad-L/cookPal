@@ -150,6 +150,11 @@ function createCard(recipe) {
 
     const category = document.createElement("p");
     category.innerText = recipe.type;
+    if (recipe.type === 'veg') {
+        category.classList.add("veg")
+    } else {
+        category.classList.add("non-veg");
+    }
     category.classList.add("category");
     card.appendChild(category);
 
@@ -255,7 +260,7 @@ above4Rating.addEventListener("change", function () {
 
 below4Rating.addEventListener("change", function () {
     removeExitingNodes(cardContainer);
-    let isChecked =below4Rating.checked;
+    let isChecked = below4Rating.checked;
     if (isChecked) {
         for (let i = 0; i < arr.length; i++) {
             if (arr[i].rating < 4) {
@@ -264,5 +269,19 @@ below4Rating.addEventListener("change", function () {
         }
     } else {
         displayAll();
+    }
+});
+
+const search = document.getElementById("searchBar");
+search.addEventListener("keyup", function (e) {
+    removeExitingNodes(cardContainer);
+    const searchTerm = e.target.value.toLowerCase();
+    const filteredRecipe = arr.filter(
+        arr =>
+            arr.name.toLowerCase().includes(searchTerm)
+    )
+
+    for (let i = 0; i < filteredRecipe.length; i++) {
+        createCard(filteredRecipe[i]);
     }
 });

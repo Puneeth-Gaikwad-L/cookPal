@@ -316,13 +316,16 @@ scale: 1.02;
 .category{
     margin: 0;
     display: flex;
-    width: 100px;
+    width: 80px;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     margin-top: 5px;
     padding: 2px 5px;
     margin-left: 10px;
     margin-bottom: -5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
 }
 
 .liked:hover{
@@ -331,4 +334,13 @@ scale: 1.02;
 
 .time{
     color: #DC582A;
+}
+
+.veg{
+    background-color: #C4D600;
+    width: 50px;
+}
+
+.non-veg{
+    background-color: #DC582A;
 }
