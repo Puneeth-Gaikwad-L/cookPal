@@ -287,17 +287,12 @@ search.addEventListener("keyup", function (e) {
 });
 
 
-const openMenu = document.getElementById("toggler");
+const toggler = document.getElementById("toggler");
 const dropDown = document.getElementById("drop-down-menu");
 
-openMenu.addEventListener("click", function () {
+toggler.addEventListener("click", function () {
     dropDown.classList.toggle("open");
-    openMenu.style.display = "none";
+    // openMenu.style.display = "none";
+    toggler.innerHTML = `<i class="fa-solid fa-xmark" style="color: #000000;"></i>`;
 });
 
-const closeMenu = document.getElementById("close-menu");
-closeMenu.addEventListener("click", function () {
-    console.log("clicked");
-    dropDown.classList.remove("open");
-    openMenu.style.display = "flex";
-});
