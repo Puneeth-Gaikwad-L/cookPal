@@ -31,12 +31,34 @@
         </div>
         <div class="header-right">
             <div class="header-tags">
-                <a href="">Home</a>
-                <a href="">Explore</a>
-                <a href="">Help</a>
+                <ul class="links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Explore</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+                <div id="toggler" class="toggle_btn"><i class="fa-solid fa-bars" style="color: #000000;"></i></div>
             </div>
             <div class="img-container">
                 <img src="./assests/header-images/Ellipse 2.png" alt="" draggable="false">
+            </div>
+        </div>
+
+        <div id="drop-down-menu" class="drop_down">
+            <div class="drop_down_header">
+                <img src="./assests/header-images/Ellipse 2.png" alt="" draggable="false">
+                <a id="close-menu" href=""><i class="fa-solid fa-xmark" style="color: #000000;"></i></a>
+            </div>
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Explore</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+            <div id="mobile-view" class="filters">
+                <div class="rattings">
+                    <p>Rating</p>
+                    <input type="checkbox" id="above-4"><label for="above-4"> 4 and Above</label><br>
+                    <input type="checkbox" id="below-4"><label for="below-4"> Below 4</label><br>
+                </div>
             </div>
         </div>
     </header>

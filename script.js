@@ -285,3 +285,19 @@ search.addEventListener("keyup", function (e) {
         createCard(filteredRecipe[i]);
     }
 });
+
+
+const openMenu = document.getElementById("toggler");
+const dropDown = document.getElementById("drop-down-menu");
+
+openMenu.addEventListener("click", function () {
+    dropDown.classList.toggle("open");
+    openMenu.style.display = "none";
+});
+
+const closeMenu = document.getElementById("close-menu");
+closeMenu.addEventListener("click", function () {
+    console.log("clicked");
+    dropDown.classList.remove("open");
+    openMenu.style.display = "flex";
+});
