@@ -202,6 +202,7 @@ function createCard(recipe) {
         heart.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i>`;
     }
     heart.onclick = function (e) {
+        console.log(e.target);
         if (heart.innerHTML === `<i class="fa-solid fa-heart" style="color: #DC582A;"></i>`) {
             heart.innerHTML = '<i class="fa-regular fa-heart" style="color: #000000;"></i>'
         } else {
@@ -293,6 +294,10 @@ const dropDown = document.getElementById("drop-down-menu");
 toggler.addEventListener("click", function () {
     dropDown.classList.toggle("open");
     // openMenu.style.display = "none";
-    toggler.innerHTML = `<i class="fa-solid fa-xmark" style="color: #000000;"></i>`;
+    if (dropDown.classList.contains("open")) {
+        toggler.innerHTML = `<i class="fa-solid fa-xmark" style="color: #000000;"></i>`;
+    } else {
+        toggler.innerHTML = `<i class="fa-solid fa-bars" style="color: #000000;">`;
+    }
 });
 
