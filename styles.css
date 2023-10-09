@@ -154,7 +154,7 @@ a:hover {
     margin-right: 0px;
 }
 
-.close{
+.close {
     margin-right: -400px;
 }
 
@@ -428,9 +428,10 @@ label {
 /* Responsive design */
 @media only screen and (max-width: 992px) {
 
-    .header{
+    .header {
         justify-content: space-between;
     }
+
     .header-tags>ul,
     .img-container {
         display: none;
@@ -445,56 +446,64 @@ label {
         justify-content: flex-end;
     }
 
-    .hero-label{
+    .hero-label {
         width: 150px;
         height: 70px;
         margin-left: 30px;
     }
 
-    .hero-label p{
+    .hero-label p {
         font-size: 10px;
     }
-    .hero-label h1{
+
+    .hero-label h1 {
         font-size: 12px;
     }
 
-    .hero-section-img{
+    .hero-section-img {
         height: 30%;
     }
 
-    .open{
+    .open {
         margin-right: -50px;
     }
 
-    .hero-section{
+    .hero-section {
         height: 50%;
     }
 
-    .filters{
+    .filters {
         display: none;
     }
-    #mobile-view{
+
+    #mobile-view {
         display: flex;
         width: 100%;
     }
 
-    .card{
+    .card {
         width: 250px;
         margin-inline: auto;
     }
-    .card-container{
+
+    .card-container {
         margin-inline: auto;
         width: 95%;
     }
-    .button-section{
+
+    .button-section {
         width: 95%;
         height: 50px;
         gap: 5px;
     }
 
-    .btn{
+    .btn {
         font-size: 8px;
         padding: 5px;
     }
-    
+
+    .logo {
+        margin-left: 10px;
+    }
+
 }
